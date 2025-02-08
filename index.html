@@ -104,6 +104,61 @@
             text-align: center;
         }
 
+        /* Contact Form Styles */
+        .contact-form {
+            background-color: #f5f5f5;
+            padding: 40px 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #1a237e;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #283593;
+        }
+
         /* Footer Styles */
         footer {
             background-color: #1a237e;
@@ -136,7 +191,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#programs">Programs</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact-form">Contact</a></li>
         </ul>
     </nav>
 
@@ -175,13 +230,47 @@
         </div>
     </section>
 
+    <section id="contact-form" class="section contact-form">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="program">Interested Program</label>
+                    <select id="program" name="program" required>
+                        <option value="">Select a Program</option>
+                        <option value="technical">Technical Training</option>
+                        <option value="it">IT Skills</option>
+                        <option value="soft-skills">Soft Skills Development</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <footer id="contact">
         <div class="container">
             <h2>Contact Us</h2>
             <div class="contact-info">
                 <p>Address: Vocational Training Centre, Anamaduwa</p>
-                <p>Email: info@vtcanamaduwa.com</p>
-                <p>Phone: +94 74 374 9364</p>
+                <p>Email: info@vtc-anamaduwa.com</p>
+                <p>Phone: +94 XX XXX XXXX</p>
             </div>
         </div>
     </footer>
