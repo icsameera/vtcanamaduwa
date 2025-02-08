@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocational Training Centre - Anamaduwa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #1a237e;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Main Content Styles */
+        .section {
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about {
+            background-color: #f5f5f5;
+        }
+
+        .programs {
+            background-color: white;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        h2 {
+            color: #1a237e;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Contact Form Styles */
+        .contact-form {
+            background-color: #f5f5f5;
+            padding: 40px 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #1a237e;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #283593;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #1a237e;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>VOCATIONAL TRAINING CENTRE - ANAMADUWA</h1>
+        <p>Empowering the youth through skills development and professional training</p>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>The Vocational Training Centre - Anamaduwa is dedicated to providing high-quality vocational training to young individuals, preparing them for successful careers in various technical and professional fields. Our mission is to bridge the skills gap and create a workforce ready for tomorrow's challenges.</p>
+        </div>
+    </section>
+
+    <section id="programs" class="section programs">
+        <div class="container">
+            <h2>Our Training Programs</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="/api/placeholder/400/300" alt="Technical Training">
+                    <h3>Technical Training</h3>
+                    <p>Comprehensive technical courses in electronics, mechanics, and more.</p>
+                </div>
+                <div class="card">
+                    <img src="/api/placeholder/400/300" alt="IT Skills">
+                    <h3>IT Skills</h3>
+                    <p>Modern computing and programming skills for the digital age.</p>
+                </div>
+                <div class="card">
+                    <img src="/api/placeholder/400/300" alt="Soft Skills">
+                    <h3>Soft Skills Development</h3>
+                    <p>Essential workplace and communication skills training.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form" class="section contact-form">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form action="mailto:ileperuma.cs@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="program">Interested Program</label>
+                    <select id="program" name="program" required>
+                        <option value="">Select a Program</option>
+                        <option value="technical">Technical Training</option>
+                        <option value="it">ICT Technician</option>
+                        <option value="soft-skills">Soft Skills Development</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Address: Vocational Training Centre, Anamaduwa</p>
+                <p>Email: info@vtc-anamaduwa.com</p>
+                <p>Phone: +94 XX XXX XXXX</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
