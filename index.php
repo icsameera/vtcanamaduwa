@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
     
     // Your email address where you want to receive the form submissions
-    $to = "your-email@example.com"; // Replace with your actual email
+    $to = "ileperuma.cs@gmail.com"; // Replace with your actual email
     
     // Email subject
     $subject = "New Training Inquiry from $name";
